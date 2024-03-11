@@ -50,9 +50,9 @@ GO
 ```
 USE [TenantDB]
 GO
-INSERT [dbo].[Tenants] ([CustomerId], [Customer], [Host], [SubDomain], [Logo], [ThemeColor], [ConnectionString]) VALUES (1, N'Red Customer', N'localhost:5057', N'rc', NULL, N'Red', N'Server=Rohol;Database=App-DB1; user id=sa; password=123456; MultipleActiveResultSets=true')
+INSERT [dbo].[Tenants] ([CustomerId], [Customer], [Host], [SubDomain], [Logo], [ThemeColor], [ConnectionString]) VALUES (1, N'Red Customer', N'localhost:5057', N'rc', NULL, N'Red', N'Server=BIPLOB\SQL2019;Database=App-DB1; user id=sa; password=123456; MultipleActiveResultSets=true')
 GO
-INSERT [dbo].[Tenants] ([CustomerId], [Customer], [Host], [SubDomain], [Logo], [ThemeColor], [ConnectionString]) VALUES (2, N'Green Customer', N'localhost:5057', N'gc', NULL, N'Green', N'Server=Rohol;Database=App-DB2; user id=sa; password=123456; MultipleActiveResultSets=true')
+INSERT [dbo].[Tenants] ([CustomerId], [Customer], [Host], [SubDomain], [Logo], [ThemeColor], [ConnectionString]) VALUES (2, N'Green Customer', N'localhost:5057', N'gc', NULL, N'Green', N'Server=BIPLOB\SQL2019;Database=App-DB2; user id=sa; password=123456; MultipleActiveResultSets=true')
 GO
 INSERT [dbo].[TenantUsers] ([Id], [CustomerId], [Email]) VALUES (1, 1, N'rc@example.com')
 GO
