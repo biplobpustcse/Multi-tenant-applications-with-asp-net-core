@@ -1,10 +1,10 @@
-Tenant Database
+#### Tenant Database
 
 I have to maintain a Tenant database to manage multiple customer Databases. I am using two tables, Like
 ```
 CREATE DATABASE [TenantDB]
 ```
-Tenants Table
+#### Tenants Table
 ```
 USE [TenantDB]
 GO
@@ -27,7 +27,7 @@ CREATE TABLE [dbo].[Tenants](
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 ```
-TenantUsers Table
+#### TenantUsers Table
 ```
 USE [TenantDB]
 GO
@@ -59,7 +59,7 @@ GO
 INSERT [dbo].[TenantUsers] ([Id], [CustomerId], [Email]) VALUES (2, 2, N'gc@example.com')
 GO
 ```
-Application Database
+#### Application Database
 
 Now I will add two application databases; these databases will access by a single web portal. Databases are like App-DB1 and App-DB2. Each database has one table, like Users.
 ```
